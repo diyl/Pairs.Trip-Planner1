@@ -4,11 +4,23 @@
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #C1B5AD;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #c1b5ad;
+  height: 100vh;
 }
 
-#map {
-  height: 100vh;
-  width: 100vw;
+/* #map {
+  /* height: 100vh; */
+/* width: 100vw; */
+/* } */
+
+#container-div {
+  display: flex;
+  height: 100%;
+}
+#container-div #map {
+  flex: 2;
+}
+#container-div #side-panel {
+  flex: 1;
 }
