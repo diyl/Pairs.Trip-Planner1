@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -w"
+    "build": "./node_modules/webpack/bin/webpack.js -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "mapbox-gl": "^0.53.1"
+  },
   "devDependencies": {
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
