@@ -1,15 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Trip Planner</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-  <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
-  <script src="./bundle.js" defer></script>
-</head>
-<body>
-  <div id="map"></div>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Trip Planner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="./bundle.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Trip Planner</h1>
+    </header>
+    <div id="map"></div>
+    <div id="side-panel">
+      <div>
+        <div>
+          <label for="hotel-select">
+            Hotels
+          </label>
+          <div>
+            <select id="hotel-select"> </select>
+            <button class="add-option"></button>
+          </div>
+        </div>
+        <div>
+          <label for="restaurant-select">Restaurants</label>
+          <div>
+            <select id="restaurant-select"></select>
+            <button class="add-option"></button>
+          </div>
+        </div>
+        <div>
+          <label for="activity-select">Activities</label>
+          <div>
+            <select id="activity-select"></select>
+            <button class="add-option"></button>
+          </div>
+        </div>
+      </div>
+      <div id="itinerary">
+        <div class="hotel">
+          <h5>My hotels</h5>
+          <ul></ul>
+        </div>
+        <div class="restaurant">
+          <h5>My restaurants</h5>
+          <ul></ul>
+        </div>
+        <div class="activity">
+          <h5>My activities</h5>
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

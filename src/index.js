@@ -1,6 +1,8 @@
 const mapboxgl = require('mapbox-gl');
+const marker = require('./marker');
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiYW5uYW1haSIsImEiOiJjanQ0aXNoaWIwMXo0NDRvM2NsanN6bjdtIn0.Q_czlTiRsCRtGmBwQKcd-g';
+mapboxgl.accessToken =
+  'pk.eyJ1IjoiYW5uYW1haSIsImEiOiJjanQ0aXNoaWIwMXo0NDRvM2NsanN6bjdtIn0.Q_czlTiRsCRtGmBwQKcd-g';
 
 const map = new mapboxgl.Map({
   container: 'map',
@@ -12,4 +14,6 @@ const map = new mapboxgl.Map({
 // const marker = document.createElement('div');
 // marker.classList.add('fs-marker');
 
-new mapboxgl.Marker().setLngLat([-74.009151, 40.705086]).addTo(map);
+export default new mapboxgl.Marker()
+  .setLngLat([-74.009151, 40.705086])
+  .addTo(map);
